@@ -72,15 +72,16 @@ public class montyhall
     }
     public static boolean shouldISwap()
     {
-        System.out.println("Type 1 if you would like to switch doors, or 0 if not");
-        String input = keyboard.nextLine();
-        int answer = Integer.parseInt(input);
-        if (answer == 1)
+        System.out.println("Type yes if you would like to switch doors, or no if not");
+        String answer = keyboard.nextLine();
+        
+        if (answer.equals("yes"))
             return true;
-        else
+        if (answer.equals("no"))
             return false;
+        return false;
             
-    }
+    }   
     
     public static int changeTheDoor(int userDoor, int goatDoor)
     {
