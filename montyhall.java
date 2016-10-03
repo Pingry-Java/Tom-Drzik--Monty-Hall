@@ -18,14 +18,14 @@ public class montyhall
            int swappedDoor = changeTheDoor(userDoor, revealDoor(carDoor, userDoor)); 
            if (swappedDoor == carDoor)
            {
-               System.out.println("Congragulations, the car was behind door" + carDoor);
+               System.out.println("Congragulations, you swapped correctly, the car was behind door" + carDoor);
            }
            else
            {
-               System.out.println("Sorry, you chose door" + swappedDoor + "but the car was behind door" + carDoor);
+               System.out.println("Sorry, you swapped to door" + swappedDoor + "but the car was behind door" + carDoor);
            }
         }
-        else
+        if (swap = false)
         {
             if (userDoor == carDoor)
             {
@@ -77,7 +77,8 @@ public class montyhall
         int answer = Integer.parseInt(input);
         if (answer == 1)
             return true;
-        return false;
+        else
+            return false;
             
     }
     
