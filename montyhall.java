@@ -13,7 +13,7 @@ public class montyhall
         System.out.println("There is a goat behind door number " + revealDoor(carDoor, userDoor));
         System.out.println("Would you like to switch your door");
         boolean swap = shouldISwap();
-        if (swap = true)
+        if (swap == true)
         {
            int swappedDoor = changeTheDoor(userDoor, revealDoor(carDoor, userDoor)); 
            if (swappedDoor == carDoor)
@@ -25,7 +25,7 @@ public class montyhall
                System.out.println("Sorry, you swapped to door" + swappedDoor + "but the car was behind door" + carDoor);
            }
         }
-        if (swap = false)
+        if (swap == false)
         {
             if (userDoor == carDoor)
             {
