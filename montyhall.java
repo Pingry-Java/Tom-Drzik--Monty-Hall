@@ -22,7 +22,7 @@ public class montyhall
            }
            else
            {
-               System.out.println("Sorry, you swapped to door" + swappedDoor + "but the car was behind door" + carDoor);
+               System.out.println("Sorry, you swapped to door" + userDoor + "but the car was behind door" + carDoor);
            }
         }
         if (swap == false)
@@ -43,6 +43,10 @@ public class montyhall
         
         
     }
+    /**
+    * Asks the user to choose door 1,2, or 3
+    *@return The chosen door
+    */
     public static int getUserDoor()
     {
         System.out.println("Choose door 1, 2, or 3");
@@ -70,6 +74,10 @@ public class montyhall
         
         
     }
+    /**
+    * Asks the user if they would like to switch doors given the new information
+    *@return returns either true for switch or false for don't switch
+    */
     public static boolean shouldISwap()
     {
         System.out.println("Type yes if you would like to switch doors, or no if not");
@@ -81,7 +89,13 @@ public class montyhall
             return false;
         return false;
             
-    }   
+    }
+    
+    /** Changes the door if the user asked to swap. Swapped door cannot be chosen door or opened door
+    *@param the initially chosen door
+    *@param the opened door
+    *@return returns the new door
+    */
     
     public static int changeTheDoor(int userDoor, int goatDoor)
     {
