@@ -15,8 +15,8 @@ public class montyhall
         boolean swap = shouldISwap();
         if (swap == true)
         {
-           int swappedDoor = changeTheDoor(userDoor, revealDoor(carDoor, userDoor)); 
-           if (swappedDoor == carDoor)
+           userDoor = changeTheDoor(userDoor, revealDoor(carDoor, userDoor)); 
+           if (userDoor == carDoor)
            {
                System.out.println("Congragulations, you swapped correctly, the car was behind door" + carDoor);
            }
